@@ -5,6 +5,8 @@ import "./globals.css";
 // import { Nav } from "@/components/Nav";
 import { cn } from "@/utils";
 
+import { Toaster } from "@/components/ui/toaster";
+
 export const metadata: Metadata = {
   title: "Hume AI - EVI - Next.js Starter",
   description: "A Next.js starter using Hume AI's Empathic Voice Interface",
@@ -26,6 +28,7 @@ export default function RootLayout({
       >
         {/* <Nav /> */}
         {children}
+        <Toaster />
       </body>
     </html>
   );

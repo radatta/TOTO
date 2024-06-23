@@ -7,6 +7,10 @@ const nextConfig = {
             hostname: 'raw.githubusercontent.com',
             pathname: '/PokeAPI/**',
           },
+          {
+            protocol: 'https',
+            hostname: "pixabay.com", 
+          }
         ],
     }
 }
