@@ -13,7 +13,7 @@ export default function ClientComponent({
 }) {
   const timeout = useRef<number | null>(null);
   const ref = useRef<ComponentRef<typeof Messages> | null>(null);
-  
+
   return (
     <div
       className={
@@ -22,6 +22,7 @@ export default function ClientComponent({
     >
       <VoiceProvider
         auth={{ type: "accessToken", value: accessToken }}
+        // configId={"ca8a5309-5134-4df6-8370-f307b2818a20"}
         onMessage={() => {
           if (timeout.current) {
             window.clearTimeout(timeout.current);
